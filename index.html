@@ -6,23 +6,23 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@sakamoto0011" />
 <meta property="og:url" content="https://samo-flat.github.io/index.html" />
-<meta property="og:title" content="Samo official site" />
+<meta property="og:title" content="Samo official site | HOME" />
 <meta property="og:description" content="Samoについて....お話します。" />
 <meta property="og:image" content="https://samo-flat.github.io/img/samo.png" />
 <title>Samo'smovie</title>
 <!--
- _  _  _ _______        _______  _____  _______ _______     
- |  |  | |______ |      |       |     | |  |  | |______     
- |__|__| |______ |_____ |_____  |_____| |  |  | |______     
-                                                            
- _______  _____                                             
-    |    |     |                                            
-    |    |_____|                                            
-                                                            
- _______ __   __      _  _  _  _____   ______          ______ 
+ _  _  _ _______        _______  _____  _______ _______
+ |  |  | |______ |      |       |     | |  |  | |______
+ |__|__| |______ |_____ |_____  |_____| |  |  | |______
+
+ _______  _____
+    |    |     |
+    |    |_____|
+
+ _______ __   __      _  _  _  _____   ______          ______
  |  |  |    _/        |  |  | |     | |_____/  |      |     │
  |  |  |    |         |__|__| |_____| |    │_ |_____ |_____/
-                                                            
+
 -->
 <!--
 papaa　apapa　ppapa
@@ -43,6 +43,7 @@ papaa　apapa　ppapa
         <script src="js/jquery.js"></script>
 　　　　<script src="js/scrollreveal.min.js"></script>
 　　　　<script src="js/t.min.js"></script>
+　　　　<script src="js/push.min.js"></script>
 
      <!--外部スクリプト-->
 
@@ -50,7 +51,7 @@ papaa　apapa　ppapa
 $(function(){
 $(".typing").t()
 });
-</script> 
+</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128348330-1"></script>
@@ -62,9 +63,21 @@ $(".typing").t()
   gtag('config', 'UA-128348330-1');
 </script>
 
+<script>
+Push.Permission.request();
+Push.create('Samoからのお知らせです', {
+　　body: 'どうも、HPに更新が入りました',
+　　icon: 'img/talenthand.png',
+　　timeout: 8000,
+　　vibrate: [100, 100, 100],
+　　onClick: function() {
+　　　　console.log(this);
+　　}
+});
+</script>
 
      <!--フォント読み込み-->
-   <link href="https://fonts.googleapis.com/css?family=Charmonman|Kosugi" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Charmonman|Kosugi" rel="stylesheet">
 
    <link href="img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
 
@@ -78,12 +91,12 @@ $(".typing").t()
         <ul class="luxbar-navigation">
             <li class="luxbar-header">
                 <a href="index.html" class="luxbar-brand"></a>
-                <label class="luxbar-hamburger luxbar-hamburger-spin" 
+                <label class="luxbar-hamburger luxbar-hamburger-spin"
                 id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
             </li>
             <li class="luxbar-item"><a href="index.html">Home</a></li>
 
-            <li class="luxbar-item"><a href="#">Music</a></li>
+            <li class="luxbar-item"><a href="music.html">Music</a></li>
 
             <li class="luxbar-item"><a href="#">Radio</a></li>
 
