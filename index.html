@@ -63,19 +63,6 @@ $(".typing").t()
   gtag('config', 'UA-128348330-1');
 </script>
 
-<script>
-Push.Permission.request();
-Push.create('現在このHPは製作中です!(最終更新 2018 11.26)', {
-　　body: '更新点\n\n・サインの追加\n・文章の編集',
-　　icon: 'img/talenthand.png',
-　　timeout: 5000,
-　　vibrate: [100, 100, 100],
-　　onClick: function() {
-　　　　console.log(this);
-　　}
-});
-</script>
-
      <!--フォント読み込み-->
    <link href="https://fonts.googleapis.com/css?family=Charmonman|Kosugi" rel="stylesheet">
 
@@ -278,6 +265,19 @@ Push.create('現在このHPは製作中です!(最終更新 2018 11.26)', {
 
 	});
 
+</script>
+
+<script>
+Push.Permission.request();
+Push.create('現在このHPは製作中です!(最終更新 2018 11.26)', {
+　　body: '更新点\n\n・サインの追加\n・文章の編集',
+　　icon: 'img/talenthand.png',
+　　timeout: 5000,
+　　vibrate: [100, 100, 100],
+　　onClick: function() {
+　　　　console.log(this);
+　　}
+});
 </script>
 
 <script>
