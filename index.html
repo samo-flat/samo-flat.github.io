@@ -43,7 +43,6 @@ papaa　apapa　ppapa
         <script src="js/jquery.js"></script>
 　　　　<script src="js/scrollreveal.min.js"></script>
 　　　　<script src="js/t.min.js"></script>
-　　　　<script src="js/push.min.js"></script>
 
      <!--外部スクリプト-->
 
@@ -185,7 +184,7 @@ $(".typing").t()
         <div class="col-xs-11 col-sm-6 col-md-6 col-lg-6">
          <div class="snsbox">
           <div class="right"> <img src="img/Twitter_Logo.png"></div></div>
-            <a href="https://twitter.com/sakamoto0011"><button class="bttn-unite bttn-block bttn-lg bttn-primary">フォロー</button></a>
+            <a href="https://twitter.com/intent/follow?screen_name=sakamoto0011"><button class="bttn-unite bttn-block bttn-lg bttn-primary">フォロー</button></a>
                            </div>
                              </div>
 　　　</div>
@@ -274,19 +273,6 @@ $(".typing").t()
 
 	});
 
-</script>
-
-<script>
-Push.Permission.request();
-Push.create('現在このHPは製作中です!(最終更新 2019 8.27)', {
-　　body: '更新点\n\n・痣の詳しい説明を追加、クリックすると...?\n・位置ずれの修正\n・様々な顔を持つ...の追加\n・久しぶりの更新、すみません。',
-　　icon: 'img/talenthand.png',
-　　timeout: 5000,
-　　vibrate: [100, 100, 100],
-　　onClick: function() {
-　　　　console.log(this);
-　　}
-});
 </script>
 
 <script>
